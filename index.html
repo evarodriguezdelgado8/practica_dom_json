@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>practica_dom_json</title>
+
+  <!-- Bootstrap 5 (en línea / CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-4">
+
+    <!-- 1. Acceso al DOM básico -->
+    <section id="ej1" class="mb-4">
+      <h2>1. Acceso al DOM básico</h2>
+      <h1 id="titulo-ej1">Título ejercicio 1</h1>
+      <p id="parrafo-ej1">Párrafo ejercicio 1</p>
+    </section>
+
+    <!-- 2. Modificación de varios elementos -->
+    <section id="ej2" class="mb-4">
+      <h2>2. Modificación de varios elementos</h2>
+      <p class="texto">Párrafo clase texto 1</p>
+      <p class="texto">Párrafo clase texto 2</p>
+      <p class="texto">Párrafo clase texto 3</p>
+    </section>
+
+    <!-- 3. Selección con querySelector -->
+    <section id="ej3" class="mb-4">
+      <h2>3. Selección con querySelector</h2>
+      <div class="caja p-3">Div .caja (primero)</div>
+      <div class="caja p-3">Div .caja (segundo)</div>
+    </section>
+
+    <!-- 4. querySelectorAll y forEach -->
+    <section id="ej4" class="mb-4">
+      <h2>4. querySelectorAll y forEach</h2>
+      <button class="btn-dom btn btn-sm">Botón 1</button>
+      <button class="btn-dom btn btn-sm">Botón 2</button>
+      <button class="btn-dom btn btn-sm">Botón 3</button>
+    </section>
+
+    <!-- 5. Comparación colecciones vivas y estáticas -->
+    <section id="ej5" class="mb-4">
+      <h2>5. Comparación entre colecciones vivas y estáticas</h2>
+      <ul id="lista-ej5">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+      </ul>
+      <button id="agregar-ej5" class="btn btn-sm btn-secondary mt-2">Agregar (ej5)</button>
+    </section>
+
+    <!-- 6. Crear elementos dinámicamente -->
+    <section id="ej6" class="mb-4">
+      <h2>6. Crear elementos dinámicamente</h2>
+    </section>
+
+    <!-- 7. Crear nodos de texto -->
+    <section id="ej7" class="mb-4">
+      <h2>7. Crear nodos de texto</h2>
+      <div id="contenedor-ej7"></div>
+    </section>
+
+    <!-- 8. Añadir atributos a un elemento -->
+    <section id="ej8" class="mb-4">
+      <h2>8. Añadir atributos a un elemento</h2>
+      <div id="contenedor-img-ej8"></div>
+    </section>
+
+    <!-- 9. Crear estructura completa -->
+    <section id="ej9" class="mb-4">
+      <h2>9. Crear estructura completa (Card Bootstrap)</h2>
+      <div id="contenedor-card-ej9" class="container"></div>
+    </section>
+
+    <!-- 10. Insertar elementos en distintas posiciones -->
+    <section id="ej10" class="mb-4">
+      <h2>10. Insertar elementos en distintas posiciones</h2>
+      <ul id="lista-ej10" class="list-group mb-2"></ul>
+      <button id="btn-append" class="btn btn-sm btn-outline-primary">append</button>
+      <button id="btn-prepend" class="btn btn-sm btn-outline-primary">prepend</button>
+      <button id="btn-before" class="btn btn-sm btn-outline-secondary">before (fuera)</button>
+      <button id="btn-after" class="btn btn-sm btn-outline-secondary">after (fuera)</button>
+    </section>
+
+    <!-- 11. Reemplazar y eliminar -->
+    <section id="ej11" class="mb-4">
+      <h2>11. Reemplazar y eliminar</h2>
+      <p id="par-eliminar">Párrafo a eliminar</p>
+      <button id="btn-eliminar-ej11" class="btn btn-sm btn-danger">Eliminar</button>
+      <button id="btn-reemplazar-ej11" class="btn btn-sm btn-warning">Reemplazar</button>
+    </section>
+
+    <!-- 12. Clonar elementos -->
+    <section id="ej12" class="mb-4">
+      <h2>12. Clonar elementos</h2>
+      <div id="tarjeta-original" class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="imagen tarjeta">
+        <div class="card-body">
+          <h5 class="card-title">Tarjeta original</h5>
+          <p class="card-text">Texto original</p>
+        </div>
+      </div>
+      <button id="btn-clonar-tarjeta" class="btn btn-sm btn-secondary mt-2">Clonar tarjeta</button>
+      <div id="contenedor-clones" class="mt-2"></div>
+    </section>
+
+    <!-- 13. Crear lista dinámica con botón -->
+    <section id="ej13" class="mb-4">
+      <h2>13. Crear lista dinámica con botón</h2>
+      <ul id="lista-ej13" class="list-group mb-2"></ul>
+      <button id="btn-agregar-ej13" class="btn btn-sm btn-primary">Agregar elemento</button>
+    </section>
+
+    <!-- 14. Eliminar último elemento -->
+    <section id="ej14" class="mb-4">
+      <h2>14. Eliminar último elemento</h2>
+      <button id="btn-eliminar-ultimo-ej14" class="btn btn-sm btn-danger">Eliminar último</button>
+    </section>
+
+    <!-- 15. Recorrer colección y modificar -->
+    <section id="ej15" class="mb-4">
+      <h2>15. Recorrer colección y modificar</h2>
+      <ul id="lista-ej15" class="list-group">
+        <li class="item list-group-item">Elemento</li>
+        <li class="item list-group-item">Elemento</li>
+        <li class="item list-group-item">Elemento</li>
+      </ul>
+      <button id="btn-numerar-ej15" class="btn btn-sm btn-outline-success mt-2">Numerar</button>
+    </section>
+
+    <!-- 16. Crear una galería con JSON local -->
+    <section id="ej16" class="mb-4">
+      <h2>16. Crear una galería con JSON local</h2>
+      <div id="galeria" class="row"></div>
+    </section>
+
+    <!-- 17. Mostrar datos de API JSONPlaceholder -->
+    <section id="ej17" class="mb-4">
+    <h2>17. Mostrar datos de API JSONPlaceholder</h2>
+    <ul id="lista-usuarios-ej17" class="list-group"></ul>
+    </section>
+
+    <!-- 18. Mostrar datos anidados de JSON -->
+    <section id="ej18" class="mb-4">
+    <h2>18. Mostrar datos anidados de JSON</h2>
+    <div id="tabla-ej18" class="table-responsive"></div>
+    </section>
+
+    <!-- 19. Filtrar y mostrar datos -->
+    <section id="ej19" class="mb-4">
+    <h2>19. Filtrar y mostrar datos</h2>
+    <div id="resultado-ej19" class="row"></div>
+    </section>
+
+    <!-- 20. Ejercicio final: mini visor de usuarios -->
+    <section id="ej20" class="mb-4">
+    <h2>20. Ejercicio final: mini visor de usuarios</h2>
+    <button id="btn-cargar-20" class="btn btn-sm btn-primary">Cargar usuarios</button>
+    <button id="btn-clonar-ultimo-20" class="btn btn-sm btn-secondary">Clonar último usuario</button>
+    <div id="visor-usuarios" class="row mt-2"></div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
